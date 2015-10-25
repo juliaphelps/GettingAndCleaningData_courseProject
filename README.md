@@ -30,7 +30,7 @@ run_analysis.R makes use of the *dplyr package*, which it will attempt to load o
 1)  Set your working directory in RStudio with setwd().
 2)  Download run_analysis.R into your working directory.
 
-Markdown is a `<em>text-to-html</em>` conversion tool for writers.
+Markdown is a `text-to-html` conversion tool for writers.
 
 3)  Source it into RStudio.  
 
