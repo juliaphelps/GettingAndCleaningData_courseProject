@@ -28,11 +28,15 @@ run_analysis.R makes use of the *dplyr package*, which it will attempt to load o
 2)  Download run_analysis.R into your working directory.
 
 3)  Source it into RStudio:
-	## if run_analysis.R is in working directory
-	> source("run_analysis.R")
+```
+## if run_analysis.R is in working directory
+> source("run_analysis.R")
+```
 
 4)  Run the function:
-	> run_analysis()
+```
+> run_analysis()
+```
 
 Depending on your machine's specs, the script should only take a couple minutes (at most) to run.
 
