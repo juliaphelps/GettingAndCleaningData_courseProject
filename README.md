@@ -1,10 +1,9 @@
-## Collect, Clean Data and Return Tidy Data Set
+## Collect Data, Clean, and Return Tidy Data Set
 Course Project for Coursera:  Getting and Cleaning Data
 
 --------------------
 Author:  Julia Phelps
 Date:  10.24.2015
---------------------
 
 ## Project Description:
 
