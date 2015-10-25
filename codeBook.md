@@ -92,7 +92,7 @@ The raw data used in this process consists of several different *.txt files, whi
 ```
 This merges the test and train data sets for subject, x, and y data.  It applies the column name "subjectID" to the subject_data data frame.  The script also changes the "activity" labels in the y data set from integers to character descriptions by applying a `factor()` of the second column of the "activity_labels.txt" set.  Column names are created for the x data set using `colnames()` to apply the second column of the "features.txt" data set.  The "x_data" data frame is created by subsetting "x_temp1" by "mean()" via use of `grep()`, to extract the mean feature variables.  Then, the standard deviation variables are apphended onto the end of "x_data" by subsetting "x_temp1" again, this time by "std()". 
 
-Once the subject, x, and y data sets are created, they are bound together into `"all_data" using `cbind()`.
+Once the subject, x, and y data sets are created, they are bound together into "all_data" using `cbind()`.
 
 ### Guide to creating the summarized tidy data frame:
 
