@@ -90,11 +90,13 @@ The raw data used in this process consists of several different *.txt files, whi
 
     all_data <- cbind(subject_data, y_data, x_data)
 ```
-This merges the test and train data sets for subject, x, and y data.  Column names are created for the x data set using `colnames()` to apply the second column of the "features.txt" data set.  The script also changes the "activity" labels in the y data set from integers to character descriptions by applying a `factor()` of the second column of the "activity_labels.txt" set.  Once the subject, x, and y data sets are created, they are bound together into all_data using `cbind()`.
+This merges the test and train data sets for subject, x, and y data.  It applies the column name "subjectID" to the subject_data data frame.  The script also changes the "activity" labels in the y data set from integers to character descriptions by applying a `factor()` of the second column of the "activity_labels.txt" set.  Column names are created for the x data set using `colnames()` to apply the second column of the "features.txt" data set.  The "x_data" data frame is created by subsetting "x_temp1" by "mean()" via use of `grep()`, to extract the mean feature variables.  Then, the standard deviation variables are apphended onto the end of "x_data" by subsetting "x_temp1" again, this time by "std()". 
+
+Once the subject, x, and y data sets are created, they are bound together into `"all_data" using `cbind()`.
 
 ### Guide to creating the summarized tidy data frame:
 
-`run_analysis()` then creates a second tidy data.frame, "avg_data", which is a summary of the means of each of the feature data columns for each activity, performed by each individual subject.  (E.G. SubjectID= 1, activity=WALKING; SubjectID=2, activity=WALKING_UPSTAIRS; etc.)  This is performed very simply via the following `dplyr` code:
+`run_analysis()` then creates a second tidy data frame, "avg_data", from "all_data".  This second tidy data frame is a summary of the means of each of the feature data columns for each activity, performed by each individual subject.  (E.G. SubjectID= 1, activity=WALKING; SubjectID=2, activity=WALKING_UPSTAIRS; etc.)  This is performed very simply via the following `dplyr` code:
 ```
 avg_data <- as.data.frame(all_data %>% group_by(subjectID, activity) %>% summarize_each(funs(mean)))
     avg_names <- colnames(avg_data[,3:68])
