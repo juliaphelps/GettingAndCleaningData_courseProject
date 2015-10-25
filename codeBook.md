@@ -48,7 +48,7 @@ To make its process as error-proof as possible, `run_analysis()` will next attem
 
 *Note:  This script was designed for Windows 8 compatability.  If you are using a Mac machine, you may need to modify the download.file() code slightly to work with your system.  Please refer to "Instructions for using run_analysis()" section of README.md for more info.
 
-### Notes on Original (Raw) Data 
+#### Notes on Original (Raw) Data 
 
 The raw data used in this process consists of several different *.txt files, which are read individually into R by `run_analysis()` for use in different parts of the data-cleaning process.  These files are as follows:
 * "./UCIData/UCI HAR Dataset/test/subject_test.txt" - dimensions[2947 x 1]
@@ -58,11 +58,11 @@ The raw data used in this process consists of several different *.txt files, whi
 * "./UCIData/UCI HAR Dataset/train/X_train.txt" - dimensions[7352 x 561]
 * "./UCIData/UCI HAR Dataset/train/y_train.txt" - dimensions[7352 x 1]
 * "./UCIData/UCI HAR Dataset/activity_labels.txt" - dimensions[6 x 2]
-* "./UCIData/UCI HAR Dataset/features.txt" dimensions[561 x 2]
+* "./UCIData/UCI HAR Dataset/features.txt" - dimensions[561 x 2]
 
 **For more information on the original study and data, please see Overview of Data Sets in the README.md file.**
 
-## Creating the Tidy Data Files (ADL_cleanData.txt and ADL_cleanData_averages.txt)
+## 3) Creating the Tidy Data Files (ADL_cleanData.txt and ADL_cleanData_averages.txt)
 ### Guide to creating the full tidy data frame:
 `run_analysis()` uses the following code to generate the full tidy data frame, "all_data":
 ```
@@ -123,7 +123,7 @@ loc1 <- "./UCIData/clean_data/ADL_cleanData.txt"
 
     to read into R for further analysis, use read.table() with header=TRUE"))
 ```
-### To read the two files back into R:
+## 4) To read the two files back into R:
 You may run the following code:
 ```
 > ADL_cleanData <- read.table("./UCIData/clean_data/ADL_cleanData.txt", header=TRUE)
@@ -210,15 +210,15 @@ A tidy data set including the mean and standard deviation ("mean" and "std") var
 
 #### Labels for "activity" Factor Variables in "ADL_cleanData.txt":
 
-| Activity                | Factor        |
-| ----------------------- | ------------- |
-| WALKING                 | 1             |
-| WALKING_UPSTAIRS        | 2             |
+| Activity                   | Factor        |
+| -------------------------- | ------------- |
+| WALKING                    | 1             |
+| WALKING_UPSTAIRS           | 2             |
 | WALKING_DOWNSTAIRS
-      | 3             | 
-| SITTING                 | 4             | 
-| STANDING                | 5             | 
-| LAYING                  | 6             | 
+         | 3             | 
+| SITTING                    | 4             | 
+| STANDING                   | 5             | 
+| LAYING                     | 6             | 
 
 ## Description of Variables in "ADL_cleanData_averages.txt":
 
@@ -300,14 +300,14 @@ A second tidy dataset which summarizes the first set by providing averages of th
 
 #### Labels for "activity" Factor Variables in "ADL_cleanData_averages.txt":
 
-| Activity                | Factor        |
-| ----------------------- | ------------- |
-| WALKING                 | 1             |
-| WALKING_UPSTAIRS        | 2             |
+| Activity                   | Factor        |
+| -------------------------- | ------------- |
+| WALKING                    | 1             |
+| WALKING_UPSTAIRS           | 2             |
 | WALKING_DOWNSTAIRS
-      | 3             | 
-| SITTING                 | 4             | 
-| STANDING                | 5             | 
-| LAYING                  | 6             | 
+         | 3             | 
+| SITTING                    | 4             | 
+| STANDING                   | 5             | 
+| LAYING                     | 6             | 
 
-## For more information, please see the README.md file.
+### For more information, please see the README.md file or contact author at juliaphelps (at) gmail (dot) com.
