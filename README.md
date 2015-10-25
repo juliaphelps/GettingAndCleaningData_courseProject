@@ -1,17 +1,18 @@
----
-title:  "Codebook"
-author:  "Julia Phelps"
-date: "10.24.2015"
----
+## Collect, Clean Data and Return Tidy Data Set
+Course Project for Coursera:  Getting and Cleaning Data
 
-# Course Project for Coursera:  Getting and Cleaning Data
+--------------------
+Author:  Julia Phelps
+Date:  10.24.2015
+--------------------
 
-## Project Description
+## Project Description:
 
-##Study design and data processing
+## Overview of run_analysis.R
 
-###Collection of the raw data
-Description of how the data was collected.
+## Instructions for using run_analysis.R
 
-###Notes on the original (raw) data 
-Some additional notes (if avaialble, otherwise you can leave this section out).
+## Output from run_analysis.R
+
+## Sources
+
