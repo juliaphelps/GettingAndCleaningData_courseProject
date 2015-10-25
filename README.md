@@ -1,17 +1,44 @@
-## Collect Data, Clean, and Return Tidy Data Set
+## Collect Data, Clean, and Return Tidy Data Set via run_analysis()
 Course Project for Coursera:  Getting and Cleaning Data
 
 --------------------
 Author:  Julia Phelps
+
 Date:  10.24.2015
+
+System:
+<blockquote>
+Operating system:  Windows 8
+
+Rstudio:  v3.2.2, 64-bit
+
+Package(s) Utilized:  dplyr
+</blockquote>
 
 ## Project Description:
 
 ## Overview of run_analysis.R
 
-## Instructions for using run_analysis.R
+This version of run_analysis.R was wrtten in RStudio v3.2.2 and has not been tested in other versions in R.  It is designed to work exclusively with the ADL datasets __________________.  <<size>>  It performs the entire process of directory structure, data collection, data cleaning and tidy data file output for the user.  The script will output two tidy datasets into a "clean_data" folder within the downloaded files:
+
+run_analysis.R makes use of the *dplyr package*, which it will attempt to load or install/load if not currently loaded in the workspace.  If unable to load dplyr for some reason, the script will exit out without attempting any additional steps.  This may be due to something blocking RStudio's normal downloading ability; therefore, it is suggested that you attempt manual download/installation/loading of *dplyr*.  The script will not run without it.
+
+## Instructions for using run_analysis()
+
+(Note:  Since run_analysis() is designed to only work with one particular dataset, it is suggested that you download the run_analysis.R script into your selected working directory to keep things organized.)
+
+1)  Set your working directory in RStudio with setwd().
+2)  Download run_analysis.R into your working directory.
+
+Markdown is a `<em>text-to-html</em>` conversion tool for writers.
+
+3)  Source it into RStudio.  
 
 ## Output from run_analysis.R
 
+## About the Data
+
 ## Sources
+
+dyplr
 
