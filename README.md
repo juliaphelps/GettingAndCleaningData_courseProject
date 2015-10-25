@@ -26,27 +26,21 @@ README and Code Book documents, which thoroughly document all aspects of the ana
 
 ### Overview of Data Sets
 
+An excerpt from the course project instructions, taken from the Coursera website:
+
+*One of the most exciting areas in all of data science right now is wearable computing....Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone.*  --reprinted from http://www.coursera.org
+
 The data sets used for this course project are located at:
 
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-These sets are taken from the Human Activity Recognition Using Smartphones study that can be found on the Center for Machine Learning and Intelligent Systems at the University of California:  Bren School of Information and Computer Science.  ( [link to CML](http://cml.ics.uci.edu/) )
-
-The Human Activity Recognition Using Smartphones study was authored by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto at Smartlab - Non Linear Complex Systems Laboratory, a Research Laboratory at the DITEN / DIBRIS Departments of the University of Genova, Italy.  ( [link to Smartlab](www.smartlab.ws) )
-
-The original study documentation and data can be found at:
+The information in these sets represent Human Activity Recognition data collected from a group of 30 subjects wearing a Samsung Galaxy S II smartphone on their waists while performing six different "activities of daily living," or ADL.  [citation needed] These sets were obtained from the Human Activity Recognition Using Smartphones study that can be found on the Center for Machine Learning and Intelligent Systems at the University of California:  Bren School of Information and Computer Science.  ( [link to CML](http://cml.ics.uci.edu/) )  The original study design documentation and data can be found at:
 
 [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-An excerpt from the course project instructions, taken from the Coursera website:
-```
-"One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone."
+The Human Activity Recognition Using Smartphones study was authored by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto at Smartlab - Non Linear Complex Systems Laboratory, a Research Laboratory at the DITEN / DIBRIS Departments of the University of Genova, Italy.  ( [link to Smartlab](www.smartlab.ws) )
 
---reprinted from http://www.coursera.org
-```
-
-For more information about the specifics of the data sets, please refer to the Code Book:  Variables section.
-
+For more information about the specifics of the data sets, please refer to the Code Book:  Variables section and the original study design documentation and data (link above).
 
 ## Overview of run_analysis.R
 
@@ -69,6 +63,7 @@ run_analysis.R makes use of the *dplyr package*, which it will attempt to load o
 
 ## If on Mac:
 > download.file("***NEEDS LINK, destfile="run_analysis.R", method="curl")
+```
 
 3)  Source it into RStudio:
 ```
@@ -111,8 +106,6 @@ cleaning/summarization process is complete.
 **ADL_cleanData_averages.txt** - A second tidy dataset which summarizes the first set by providing averages of the mean and standard deviation ("mean" and "std") for each individual activity performed by each subject.  Again, appropriate "SubjectID" and "activity" labels are included.  Dimensions are 180 rows by 68 columns.
 
 Please see the Code Book (codeBook.md) for more information on the outputted tidy datasets, including Variable Names, Summary Choices and overall Study Design.
-
-## About the Data
 
 ## Sources
 
