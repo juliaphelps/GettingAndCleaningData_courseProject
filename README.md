@@ -2,6 +2,7 @@
 Course Project for Coursera:  Getting and Cleaning Data
 
 --------------------
+Version:  1
 Author:  Julia Phelps<br>
 Date:  10.24.2015<br>
 System:
@@ -76,8 +77,13 @@ run_analysis.R makes use of the *dplyr package*, which it will attempt to load o
 ```
 > run_analysis()
 ```
-
 Note:  When the run_analysis() function starts, you will get system messages indicating that *dplyr* is being loaded or downloaded/loaded, and a confirmation once it is loaded.  Provided that dplyr loads correctly, the rest of the function will begin.  Depending on your machine's specs, the script should only take a couple minutes (at most) to run.
+
+5) To load data back into RStudio:
+```
+> ADL_cleanData <- read.table("./UCIData/clean_data/ADL_cleanData.txt", header=TRUE)
+> ADL_cleanData_averages <- read.table("./UCIData/clean_data/ADL_cleanData_averages.txt", header=TRUE)
+```
 
 **Please see the included Code Book (file = codeBook.md) for more information on the Study Design and specific variables.**
 
