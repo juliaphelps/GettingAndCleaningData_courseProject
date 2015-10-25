@@ -215,10 +215,10 @@ A tidy data set including the mean and standard deviation ("mean" and "std") var
 | WALKING                    | 1             |
 | WALKING_UPSTAIRS           | 2             |
 | WALKING_DOWNSTAIRS
-         | 3             | 
-| SITTING                    | 4             | 
-| STANDING                   | 5             | 
-| LAYING                     | 6             | 
+         | 3             |
+| SITTING                    | 4             |
+| STANDING                   | 5             |
+| LAYING                     | 6             |
 
 ## Description of Variables in "ADL_cleanData_averages.txt":
 
@@ -305,9 +305,9 @@ A second tidy dataset which summarizes the first set by providing averages of th
 | WALKING                    | 1             |
 | WALKING_UPSTAIRS           | 2             |
 | WALKING_DOWNSTAIRS
-         | 3             | 
-| SITTING                    | 4             | 
-| STANDING                   | 5             | 
-| LAYING                     | 6             | 
+         | 3             |
+| SITTING                    | 4             |
+| STANDING                   | 5             |
+| LAYING                     | 6             |
 
 ### For more information, please see the README.md file or contact author at juliaphelps (at) gmail (dot) com.
